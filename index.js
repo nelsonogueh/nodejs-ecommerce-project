@@ -15,29 +15,14 @@ app.get("/", (req, res) => {
 })
 
 
+// http://127.0.0.1:8080/
 app.get("/all-friends", (req, res) => {
    res.json(res.send(Friends))
 })
 
 
-app.post("/add-friend", (req, res) => {
-    res.send("Friend added...")  
-})
 
-
-app.put("/update-friend", (req, res) => {
-    res.send("Update friend endpoint...")
-})
-
-
-app.delete("/delete-friend/", (req, res) => {
-    res.send("Delete friend endpoint...")
-})
-
-
-
-
-
+// http://127.0.0.1:8080/new-user/?name=Jacob Doe&age=99&phonenumber=09030000000
 app.post("/new-user", (req, res) => {
 
     // Using destructuring method to get all the expected query strings
@@ -61,6 +46,23 @@ app.post("/new-user", (req, res) => {
    // Returning the array with the newly added item
    res.json(Friends).statusCode(200)
 })
+
+
+
+
+app.put("/update-friend", (req, res) => {
+    res.send("Update friend endpoint...")
+})
+
+
+app.delete("/delete-friend/", (req, res) => {
+    res.send("Delete friend endpoint...")
+})
+
+
+
+
+
 
 
 
