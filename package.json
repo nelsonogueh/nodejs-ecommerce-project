@@ -1,7 +1,7 @@
 {
-  "name": "e-commerce-assignment",
+  "name": "node-e-commerce-project",
   "version": "1.0.0",
-  "description": "Week6 e-Commerce assignment",
+  "description": "Express NodeJS e-Commerce project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
